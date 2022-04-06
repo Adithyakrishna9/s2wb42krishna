@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}. My name is Raavi Adithyakrishna.
+  - let results=[{Heroines_name:"Miakhalifa",Heroines_color:"White",Heroines_cost:"160000"},{Heroines_name:"Kajalagarwal",Heroines_color:"white mixed with black",Heroines_cost:"200000"},{Heroines_name:"zennifer Lawrence",Heroines_color:"milky white",Heroines_cost:"250000"}]
+  div(class="container-fluid")
+    div(class="row")
+      each Heroines, index in results
+        div(class="col-sm-2") #{Heroines.Heroines_name} - #{Heroines.Heroines_color} - $#{Heroines.Heroines_cost}
