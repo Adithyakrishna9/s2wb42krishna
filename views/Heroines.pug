@@ -9,7 +9,7 @@ block content
       each heroines, index in results
         div(class="col-sm-2" onclick=`buy(${index+1})`) #{heroines.Heroines_name} - #{heroines.Heroines_color} - $#{heroines.Heroines_cost}
 
-script.
-  function buy(index){
-    alert(`You purchased item ${index}`);
-  }
+  script.
+    function buy(index){
+      alert(`You purchased item ${index}`);
+   }
